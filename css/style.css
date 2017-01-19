@@ -49,7 +49,7 @@ h1 {
     margin-bottom: 0em;
     padding-bottom: 0.2em;
     border-bottom: 1px solid;
-    border-color: grey;
+    border-color: rgb(210, 210, 210);
 }
 
 h1 span {
@@ -72,7 +72,7 @@ h2 span {
 article {
     display: inline-block;
     border-bottom: 1px solid;
-    border-color: rgb(210, 210, 210)grey;
+    border-color: rgb(210, 210, 210);
     margin-top: 1em;
     padding-bottom: 1em;
 }
@@ -94,4 +94,56 @@ button {
     padding: 0.5em;
     border-style: solid;
     border-radius: 5px;
+}
+
+.pagination {
+    display: inline-block;
+    width: 58%;
+    border-bottom: 1px solid;
+    border-color: rgb(210, 210, 210);
+    margin-left: 4em;
+    padding-left: 26em;
+    padding-bottom: 3em;
+    padding-top: 2em;
+}
+
+.pagination li {
+    display: inline;
+    padding-left: 1em;
+}
+
+.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pagination li a.active {
+    background-color: rgb(53, 79, 173);
+    color: white;
+    border: 1px solid rgb(53, 79, 173);
+}
+
+.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
